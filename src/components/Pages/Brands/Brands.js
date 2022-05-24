@@ -13,7 +13,7 @@ const Brands = () => {
                 <div className='text-center'>
                     <hr /> <br />
                     <h3 className='text-primary mt-5 text-3xl font-bold uppercase 
-                mb-5'>Our Available Brands</h3>
+                mb-5'>Available Brands</h3>
                     <div>
                         <div className='m-20 mt-0 grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-100'>
                             <figure><img src={brand1} alt="Shoes" /></figure>
