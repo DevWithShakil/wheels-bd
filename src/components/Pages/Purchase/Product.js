@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import { useQuery } from 'react-query';
 import { useNavigate } from 'react-router-dom';
+import Fetch from '../../Api/Fetch';
 
-const Service = ({ service }) => {
+const Product = ({ service }) => {
+
     console.log(service);
     const navigate = useNavigate()
     return (
@@ -17,7 +20,7 @@ const Service = ({ service }) => {
                     <h4 className="card-title">{service.quantity}</h4>
                     <h4 className="card-title">{service.order}</h4>
                     <h4 className="card-title">{service.price}</h4>
-                    <button onClick={() => navigate(`/order/${service._id}`)} class="btn btn-active btn-neutral btn-wide">Book Now</button>
+                    <button onClick={() => navigate(`/order/${service._id}`)} class="btn btn-active btn-neutral btn-wide">Purchase Now</button>
                 </div>
             </div>
         </div>
@@ -25,4 +28,4 @@ const Service = ({ service }) => {
     );
 };
 
-export default Service;
+export default Product;

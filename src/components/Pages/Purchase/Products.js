@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import Fetch from '../../Api/Fetch';
-import Service from './Service'
-import './service.css';
+import Service from './Product'
 
 
-const Services = () => {
+const Products = () => {
     const [services, setServices] = useState([])
 
     useEffect(() => {
@@ -31,11 +30,8 @@ const Services = () => {
                     ></Service>)
                 }
             </div>
-            <div class="button_order">
-
-            </div>
         </div>
     );
 };
 
-export default Services;
+export default Products;
